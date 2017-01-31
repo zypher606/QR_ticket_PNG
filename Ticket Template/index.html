@@ -9,17 +9,24 @@
 
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="qrcode.js"></script>
+
+		<style type="text/css">
+			#qrcode img{
+				width: 300px !important;
+			}
+
+		</style>
 	</head>
-	<body>
+	<body style="margin: 0px;">
 
 
 
 
-		<div style="width: 60%; margin-left: 20%;">
-			<!-- <img src="./img/img.jpg" style="width: 100%;"/> -->
+		<div style="width: 100%">
+			<img src="./img/img.jpg" style="width: 100%;"/>
 			<!-- <input id="text" type="text" value="http://jindo.dev.naver.com/collie" style="width:80%" /><br /> -->
-			<!-- <div id="qrcode" style="width: 0; height: 0;float: right; margin-top: -300px; margin-right: 200px; position: relative;"></div> -->
-			<div id="qrcode" style=""></div>
+			<div id="qrcode" style="margin-top: -39%; margin-left: 70%; position: relative;"></div>
+			<!-- <div id="qrcode" style=""></div> -->
 
 		</div>
 
@@ -62,7 +69,7 @@
 				  return query_string;
 			}();
 
-			console.log(QueryString.c)
+			console.log(QueryString.QRgencode)
 
 
 
@@ -103,7 +110,7 @@
 
 
 			
-			var hashed = QueryString.c;
+			var hashed = QueryString.QRgencode;
 
 
 			// var hashed = "BLITH17" + randomString(16, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
